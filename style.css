@@ -755,7 +755,7 @@ strong {
 }
 /* ---- BARRA SUPERIOR (LOGO + NOME) ---- */
 .topbar {
-  background: var(--color-dark);
+  background: linear-gradient(110deg, #929da6 0%, #d9dee2 45%, #adb7bf 72%, #8c9ba5 100%);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -794,7 +794,7 @@ strong {
 .topbar__name strong {
   font-family: var(--font-headline);
   font-size: 18px;
-  color: var(--color-white);
+  color: var(--color-primary);
   letter-spacing: 0.5px;
 }
 
@@ -803,8 +803,9 @@ strong {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: var(--color-accent-2);
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+  color: #701b23;
 }
 
 .cta-button--compact {
@@ -862,6 +863,25 @@ strong {
 
 /* Responsivo: topbar em telas pequenas */
 @media (max-width: 480px) {
-  .topbar__name small { display: none; }
+  .topbar__name small { font-size: 10px; }
   .cta-button--compact { padding: 10px 14px; font-size: 12px; }
+}
+/* Chamada principal e acomodação do novo subtítulo */
+.hero__visit-button {
+  max-width: 100%;
+  font-size: clamp(18px, 2.4vw, 22px);
+  padding: 20px 32px;
+  line-height: 1.35;
+  margin-bottom: 28px;
+}
+.hero__visit-button:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 5px;
+}
+.topbar__logo { flex-shrink: 0; }
+@media (max-width: 767px) {
+  .topbar__content { flex-wrap: wrap; justify-content: center; gap: 12px; }
+  .topbar__brand { min-width: 0; }
+  .topbar__name { min-width: 0; }
+  .topbar__name small { max-width: 280px; }
 }
