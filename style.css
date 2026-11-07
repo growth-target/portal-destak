@@ -885,3 +885,88 @@ strong {
   .topbar__name { min-width: 0; }
   .topbar__name small { max-width: 280px; }
 }
+.hero__image video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #16191D;
+}
+#solucao .section__text {
+  text-align: center;
+}
+#solucao > .container > .cta-button {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 32px auto 0;
+}
+#solucao .section__title::after {
+  width: 100px;
+  height: 4px;
+  background: var(--color-accent-2);
+  border-radius: 4px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.45);
+}
+/* Linha contínua vermelha com efeito de profundidade */
+#portfolio .section__title::after {
+  width: 100px;
+  height: 4px;
+  background: var(--color-accent-2);
+  border-radius: 4px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.45);
+}
+
+/* Botão centralizado abaixo da galeria */
+#portfolio > .container > .cta-button {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 32px auto 0;
+  text-align: center;
+}
+#preco .section__title::after {
+  width: 100px;
+  height: 4px;
+  background: var(--color-accent-2);
+  border-radius: 4px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.45);
+}
+/* Linha contínua com profundidade */
+#cta-final .section__title::after {
+  width: 100px;
+  height: 4px;
+  background: var(--color-accent-2);
+  border-radius: 4px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 3px 6px rgba(0, 0, 0, 0.45);
+}
+
+/* Centraliza o botão na coluna do título */
+#cta-final .cta-final__text > .cta-button {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Centraliza também o texto abaixo do botão */
+#cta-final .hero__microcopy {
+  text-align: center;
+}
